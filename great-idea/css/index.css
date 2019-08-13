@@ -1,7 +1,9 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -12,8 +14,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +26,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -58,9 +60,148 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+    /*font-family: 'Bangers', cursive;*/
+    font-family: 'Saira Stencil One', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
+		/*border: 2px solid red;*/
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Your code starts here! */
+
+body{
+	width: 880px;
+	margin: 0 auto;
+}
+p{
+	font-family: 'Quicksand', sans-serif;
+}
+nav{
+	display: flex;
+	margin-top: 20px;
+}
+.nav_item{
+	background: white;
+	color: #c2c2c2;
+	margin: 10px;
+	padding: 5px 15px;
+	text-decoration: none;
+}
+.nav_item:hover{
+	opacity: 0.8;
+}
+.logo{
+	margin-top: 10px;
+}
+
+.firstflex{
+	display: flex;
+}
+
+.title{
+	text-align: center;
+	font-size: 70px;
+	margin-top: 120px;
+	margin-left: 60px;
+}
+.circle{
+	margin-top: 50px;
+}
+.start{
+	background: white;
+	color: black;
+	border: 1px solid black;
+	margin: 10px;
+	padding: 5px 40px;
+	text-decoration: none;
+	margin-left: 180px;
+	position: absolute;
+	top: 400px;
+}
+.start:hover{
+	opacity: 0.8;
+}
+
+.secondflex{
+	display: flex;
+}
+
+.sectionone{
+	margin-top: 30px;
+	width: 48.5%;
+	height: 100px;
+	margin-bottom: 30px;
+}
+#second{
+	margin-left: 20px;
+}
+
+.thirdflex{
+	display: flex;
+}
+.sectiontwo{
+	
+	margin-top: 30px;
+	width: 33%;
+	height: 100px;
+	margin-bottom: 30px;
+}
+.sectionthree{
+	margin-top: 30px;
+}
+.copyright{
+	text-align:center;
+	font-size: 13px;
+}
+
+/* Services*/
+
+.headerimg{
+	margin-top: 25px;
+}
+
+.services{
+	font-size: 30px;
+	margin-top:25px;
+}
+
+.sections{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.sectionName{
+	font-size: 20px;
+}
+.item{
+	border: 1px solid black;
+	padding: 20px;
+	width: 48%;
+	margin: 20px 0px;
+}
+
+.buttons{
+	border: 1px solid black;
+	text-decoration: none;
+	color: black;
+	padding: 5px 40px;
+	border-radius: 5px;
+	font-size: 13px;
+}
+
+.thickerBreak{
+	background-color: black;
+    color: black;
+    border: solid 1px black;
+    height: 1px;
+    width: 100%;
+}
+.services-info-img{
+	margin-left: 50px;
+}
+
+.list{
+	font-family: 'Quicksand', sans-serif;
+	margin-top: 10px;
+}
